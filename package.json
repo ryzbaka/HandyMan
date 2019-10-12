@@ -1,0 +1,21 @@
+{
+  "name": "HandyMan",
+  "version": "1.0.0",
+  "description": "Online learning platform that uses deep learning to teach Indian Sign Language.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryzbaka/HandyMan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryzbaka/HandyMan/issues"
+  },
+  "homepage": "https://github.com/ryzbaka/HandyMan#readme"
+}
