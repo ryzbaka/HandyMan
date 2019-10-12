@@ -54,3 +54,13 @@ body{
     margin-right: 20px;
     color:white;
 }
+.main-content{
+    /*border:1px solid black;*/
+    height:500px;
+    display:flex;
+    flex-direction:column;
+}
+.about{
+    margin-top: 25px;
+    font-size:10px;
+}
