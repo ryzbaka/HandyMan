@@ -46,11 +46,3 @@ body{
     margin-right: 20px;
     color:white;
 }
-.item:hover{
-    background-color:darkorange;
-    /*border:1px solid green;*/
-    float:flex-end;
-    font-size:25px;
-    margin-right: 20px;
-    color:white;
-}
