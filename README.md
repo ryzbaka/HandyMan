@@ -1,7 +1,5 @@
-# Project Title
-
-हस्तBoli HastBoli
-
+# हस्तBoli HastBoli
+HastBoli is a learning management platform for a course that teaches Indian Sign Language.
 ## Getting Started
 
 ```
