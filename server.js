@@ -4,7 +4,7 @@ const path=require('path')
 app=express()
 
 app.get("/",function(req,res){
-    console.log(req.url)``
+    console.log(req.url)
     res.sendFile(path.join(__dirname,"homepage.html"))
 })
 app.get("/team",function(req,res){
