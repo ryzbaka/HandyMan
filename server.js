@@ -1,5 +1,5 @@
-const express=require('express')
-const path=require('path')
+const express=require('express')//import express library
+const path=require('path')//import path library for joining paths
 
 app=express()
 
