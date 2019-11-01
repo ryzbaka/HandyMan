@@ -12,6 +12,6 @@ app.get("/team",function(req,res){
     res.sendFile(path.join(__dirname,"teampage.html"))
 })
 app.use(express.static(__dirname+'/public/'))//public data
-const port=5000
+const port=3001
 app.listen(port)
 console.log(`listening on port ${port}`)
