@@ -11,6 +11,18 @@ app.get("/team",function(req,res){
     console.log(req.url)
     res.sendFile(path.join(__dirname,"teampage.html"))
 })
+app.get("/sign_up",function(req,res){
+    console.log(req.url)
+    res.sendFile(path.join(__dirname,"sign_up.html"))
+})
+app.get("/sign_in",function(req,res){
+    console.log(req.url)
+    res.sendFile(path.join(__dirname,"sign_in.html"))
+})
+app.get("/playground",function(req,res){
+    console.log(req.url)
+    res.sendFile(path.join(__dirname,"playground.html"))
+})
 app.use(express.static(__dirname+'/public/'))//public data
 const port=5000
 app.listen(port)
