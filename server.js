@@ -24,6 +24,6 @@ app.get("/playground",function(req,res){
     res.sendFile(path.join(__dirname,"playground.html"))
 })
 app.use(express.static(__dirname+'/public/'))//public data
-const port=5000
+const port=3001
 app.listen(port)
 console.log(`listening on port ${port}`)
