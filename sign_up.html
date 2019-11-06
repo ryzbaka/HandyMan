@@ -39,7 +39,40 @@
         </div>
       </div>
       <div class="main-content">
-        <p>make sign up form here</p>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first-name" type="text" class="validate">
+                <label for="first-name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="user-name" type="text" class="validate">
+                <label for="user-name">Username</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate passWord">
+                <label for="password">Password</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <style>
+          .input-field label{
+            color:orange;
+          }
+          .input-field input[type=text]:focus + label {
+             color: darkorange;
+          }
+        </style>
       </div>
     </div>
     <div class="extra-information">

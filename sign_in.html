@@ -25,7 +25,7 @@
         <a href="/"><h1 class="main-heading brand-logo white-text">हस्तBoli</h1></a>
         <div class="nav-bar-items">
           <div class="item waves-effect waves-light hoverable playground">
-            <a class='white-text' href='/playground.html'>Playground</a>
+            <a class='white-text' href='/playground'>Playground</a>
           </div>
           <div class="item waves-effect waves-light hoverable team">
             <a class='white-text' href='/team'>Team</a>
@@ -34,12 +34,36 @@
             <a class='white-text' href='/sign_up'>Sign Up</a>
           </div>
           <div class="item waves-effect waves-light hoverable sign-in">
-            <a class='white-text' href='/sign_in'>Sign In</a>
+            <a class='white-text' href='/sign_in'>Sign in</a>
           </div>
         </div>
       </div>
       <div class="main-content">
-        <p>make sign in form here</p>
+        <div class="row">
+          <div class="row"></div>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="user-name" type="text" class="validate">
+                <label for="user-name">Username</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate passWord">
+                <label for="password">Password</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <style>
+          .input-field label{
+            color:orange;
+          }
+          .input-field input[type=text]:focus + label {
+             color: darkorange;
+          }
+        </style>
       </div>
     </div>
     <div class="extra-information">
