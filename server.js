@@ -39,9 +39,20 @@ app.post("/sign_up/send_details",async function(req,res){
     })
     try{
         const savedUser=await user.save()
-        res.json(savedUser)
+        res.json({message:"user creation successful"})
     }catch(err){
         res.json({message:err})
+    }
+})
+
+app.get("/sign_up/get_details/:username",async function(req,res){
+    try{
+        const userName=req.params.username
+        const existingUser=await Users.find({username:userName})
+        res.json(existingUser)
+
+    }catch (err){
+        res.json({message:"Unique"})
     }
 })
 //
