@@ -34,6 +34,10 @@ app.get("/learn", function(req, res) {
   console.log(req.url);
   res.sendFile(path.join(__dirname, "learn.html"));
 });
+app.get("/sign_in", function(req, res) {
+  console.log(req.url);
+  res.sendFile(path.join(__dirname, "sign_in.html"));
+});
 
 
 //Database logic ~ Sign Up
@@ -73,8 +77,28 @@ app.get("/sign_up/get_details/:username", async function(req, res) {
 });
 //
 //Database Logic ~ Sign In
-
-
+app.post("/sign_in/send_details",async function(req,res){
+  //this is reponsible for 1)checking if username exists, then fetching details 2) comparing plaintext password sent from front to the encrypted passweord received from database
+  //1) Checking if user exists
+  const username=req.body.username
+  const sentPassword=req.body.password
+  const foundUser=await Users.findOne({username:username})
+  //console.log(foundUser)
+  if(foundUser){
+    //user found. Validate password
+    const actualPassword=foundUser.password
+    const result=bcrypt.compare(sentPassword,actualPassword,function(err,result){
+      if(result){
+        res.send({message:"Authentication successful",exists:true})
+      }
+      else{
+        res.send({message:"Incorrect password.",exists:true})
+      }
+    })
+  }else{
+    res.send({message:'User does not exist.',exists:false})
+  }
+})
 //
 
 
