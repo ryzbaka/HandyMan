@@ -10,7 +10,7 @@ cd HandyMan
 * Node.js Version: 10.16.3
 * NPM Version: 6.9.0
 ```
-npm install express
+npm install   # this will install all the required packages
 ```
 ### Run Server
 ```
