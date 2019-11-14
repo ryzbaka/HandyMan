@@ -1,3 +1,4 @@
+if(document.cookie===''){
 const signInButton = document.querySelector(".sign-in-button");
 signInButton.addEventListener("click", () => {
   const username = document.querySelector("#user-name").value;
@@ -43,4 +44,18 @@ signInButton.addEventListener("click", () => {
         }
     })
   }
-});
+});}
+else{
+  const userInfo=JSON.parse(document.cookie)
+  const errorMessage=document.querySelector('#error-message')
+  const signInButton=document.querySelector(".sign-in-button")
+  signInButton.style.backgroundColor='grey'
+  errorMessage.innerText=`Already signed in as ${userInfo.username}. You can sign out instead.`
+  errorMessage.style.color='darkyellow'
+  errorMessage.style.backgroundColor='yellow'
+  signInButton.innerText="Sign Out"
+  signInButton.addEventListener('click',()=>{
+    document.cookie=''
+    errorMessage.innerText='Signed out.'
+  })
+}
