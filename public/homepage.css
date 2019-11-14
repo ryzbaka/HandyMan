@@ -7,7 +7,7 @@ body{
 }
 .main-flex-container{
     /*border:3px solid black;*/
-    height:820px;
+    height:150%;
     background-color:lightgrey;
 }
 .extra-information{
@@ -55,8 +55,8 @@ body{
     color:white;
 }
 .main-content{
-    /*border:1px solid black;*/
-    height:600px;
+    /*border:1px solid red;*/
+    height:86%;
     display:flex;
     flex-direction:column;
 }
@@ -70,7 +70,7 @@ body{
     justify-content:center;
 }
 .team-members{
-    height:100%;
+    height:50%;
     display:flex;
     flex-direction:row;
 }

@@ -40,6 +40,7 @@ if (document.cookie === "") {
               username: userCredentials.username,
               signed_in: true
             });
+            document.location.reload()
             return;
           } else {
             errorMessage.style.color = "white";
@@ -61,5 +62,9 @@ if (document.cookie === "") {
   signInButton.addEventListener("click", () => {
     document.cookie = "";
     errorMessage.innerText = "Signed out.";
+    signInButton.innerText="Sign In"
+    signInButton.style.backgroundColor='orange'
+    document.location.reload()
+    return
   });
 }

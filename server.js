@@ -39,6 +39,11 @@ app.get("/sign_in", function(req, res) {
   res.sendFile(path.join(__dirname, "sign_in.html"));
 });
 
+app.get("/learn/:someCourse",function(req,res){
+  console.log(req.url)
+  requiredFile=req.url.split('/')[2]+'.html'
+  res.sendFile(path.join(__dirname,requiredFile))
+})
 
 //Database logic ~ Sign Up
 app.post("/sign_up/send_details", async function(req, res) {
@@ -100,7 +105,6 @@ app.post("/sign_in/send_details",async function(req,res){
   }
 })
 //
-
 
 
 

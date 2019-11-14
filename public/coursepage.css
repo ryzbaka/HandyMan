@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.main-content{
+    flex-direction: row;
+}
+.sidebar{
+    top:0;
+    height:100%;
+    width:25%;
+    border:1px solid grey;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+    white-space:nowrap;
+}
+.sidebar-option{
+    height:10%;
+    width:100%;
+    display:flex;
+    color:orange;
+    font-size:400%;
+    justify-content: center;
+}
+.sidebar-option:hover{
+    height:10%;
+    width:100%;
+    display:flex;
+    color:orange;
+    font-size:400%;
+    justify-content: center;
+    background-color: darkgrey;
+}
+.content{
+    height:100%;
+    width:75%;
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+}
