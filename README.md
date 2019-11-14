@@ -14,5 +14,5 @@ npm install   # this will install all the required packages
 ```
 ### Run Server
 ```
-node server.js
+node server.js #run server on localhost:3001
 ```
