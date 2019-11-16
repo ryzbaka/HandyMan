@@ -1,7 +1,7 @@
 const gif_links={
-    'A':"https://giphy.com/embed/JO4n4uibU3i7bylYok",
-    'B':"https://giphy.com/embed/MC322ygNOukMKek11X",
-    'C':"https://giphy.com/embed/ZCfmErnNWb4yXZ7b8J"
+    'A':"https://giphy.com/embed/USmkES7qttoxW8MNT5",
+    'B':"https://giphy.com/embed/lTdmiZp1gHv97700bl",
+    'C':"https://giphy.com/embed/RIqyULVUeUkMXW35b8"
 }
 const options=document.querySelectorAll('.sidebar-option')
 const gifContainer=document.querySelector('.gif')
