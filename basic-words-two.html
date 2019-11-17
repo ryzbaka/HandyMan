@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>हस्तBoli-HastBoli</title>
     <link rel="stylesheet" href="/homepage.css" />
+    <link rel="stylesheet" href="/coursepage.css"/>
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -18,6 +19,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script>
+      if(document.cookie===''){
+        window.location.replace("/sign_in")
+      }
+    </script>
   </head>
   <body>
     <div class="main-flex-container z-depth-4 ">
@@ -44,11 +50,30 @@
         </div>
       </div>
       <div class="main-content">
-        <p>addcontent</p>
+        <div class="sidebar">
+            <div class="sidebar-option">A</div>
+            <div class="sidebar-option">B</div>
+            <div class="sidebar-option">C</div>
+            <div class="sidebar-option">D</div>
+            <div class="sidebar-option">E</div>
+            <div class="sidebar-option">F</div>
+            <div class="sidebar-option">G</div>
+            <div class="sidebar-option">H</div>
+            <div class="sidebar-option">I</div>
+            <div class="sidebar-option">J</div>
+            <div class="sidebar-option">K</div>
+            <div class="sidebar-option">L</div>
+        </div>
+        <div class="content">
+            <iframe class="gif" src="/content/A.mp4" width="480" height="480" frameBorder="0"></iframe>
+        </div>
+        <script src='/change-gif.js'></script>
       </div>
+      
     </div>
     <div class="extra-information">
       Made with ❤️ in Chandigarh, India
     </div>
+    <script src="/check_session.js"></script>
   </body>
 </html>
