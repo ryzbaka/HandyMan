@@ -34,32 +34,3 @@ if (document.cookie !== "") {
 } else {
   window.location.replace("/sign_in");
 }
-/*
-const graphs = document.querySelectorAll(".ldBar");
-  for (let i = 0; i < graphs.length; i++) {
-    const graphClass = graphs[i].classList.value.split(" ");
-    const classLength = graphClass.length;
-    const tag = graphClass[classLength - 1];
-    const userCookie = JSON.parse(document.cookie);
-    const userName=userCookie.username
-    const dataKey={
-        username:userName,
-        coursename:tag
-    }
-    const rawReponse = fetch("/fetch_user_graph", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(dataKey)
-      });
-    rawReponse.then(something=>{
-        return something.json()
-    }).then(data=>{
-        console.log(`Course:${tag}`)
-        console.log(`Progress:${data.progress}`)
-        console.log(`Total:${data.total}`)
-        const percent=(data.progress/data.total)*100
-        console.log(`Percent ${percent}`)
-        
-    })*/
