@@ -153,6 +153,21 @@ app.patch("/progress/update_progress",async function(req,res){
   const something=await Courses.findOneAndUpdate({username:user,coursename:course},{$set:{progress:req.body.progress}})
   res.json(something)
 })
+//
+app.post("/fetch_user_graph",async (req,res)=>{
+  const userName=req.body.username
+  const courseName=req.body.coursename
+  const foundRecord=await Courses.findOne({
+    coursename:courseName,
+    username:userName
+  })
+  if(foundRecord!==null){
+  res.json({progress:foundRecord.progress,total:foundRecord.total})
+  }
+  else{
+    res.json({progress:0,total:12})
+  }
+})
 
 app.use(express.static(__dirname + "/public/")); //public data
 const port = 3001;
