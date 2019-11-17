@@ -22,6 +22,8 @@ if (document.cookie !== "") {
     },
     body: JSON.stringify(userObject)
   });
+  //
+  //
   rawReponse
     .then(raw => {
       return raw.json();
@@ -71,4 +73,7 @@ if (document.cookie !== "") {
 
   //disable access to future content forcing the user to move sequentially
   //Under no circumstances should the user be allowed to view content before completing previous stuff
+}
+else{
+  window.location.replace('/sign_in')
 }
