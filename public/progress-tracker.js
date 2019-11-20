@@ -31,6 +31,9 @@ if (document.cookie !== "") {
     .then(data => {
       pastProgress = data.progress;
       console.log(pastProgress);
+      if(pastProgress===undefined){
+        window.location.reload()
+      }
       const tabs = document.querySelectorAll(".sidebar-option");
       for (let i = 0; i < pastProgress; i++) {
         tabs[i].classList.add("hoverable");
