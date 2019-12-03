@@ -1,7 +1,10 @@
 const gif_links = {
   A: "/content/A.mp4",
   B: "/content/B.mp4",
-  C: "/content/C.mp4"
+  C: "/content/C.mp4",
+  D: "/content/D.mp4",
+  E: "/content/E.mp4",
+  F: "/content/F.mp4"
 };
 if (document.cookie !== "") {
   const cookie = JSON.parse(document.cookie);
